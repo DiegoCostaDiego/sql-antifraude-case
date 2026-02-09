@@ -28,3 +28,8 @@ All data is fictional and used only for analytical demonstration.
 
 ## Notes
 This project focuses on analytical reasoning and clarity rather than performance optimization.
+
+## Queries
+- `queries/01_auth_failures.sql`: Finds user+device pairs with high failed LOGIN/OTP attempts (last 24h).
+- `queries/02_pix_after_fail.sql`: Links suspicious auth behavior to APPROVED Pix within 20 minutes, requiring at least one suspicious Pix condition.
+- `queries/03_ranked_queue.sql`: Produces an investigation queue with a simple priority score and ranks devices per user.
